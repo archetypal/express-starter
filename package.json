@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "REST API",
+  "main": "dist/server.js",
+  "scripts": {
+    "tsc": "tsc",
+    "serve": "tsc && node dist/server.js",
+    "watch-node": "nodemon dist/server.js",
+    "watch-ts": "tsc -w",
+    "clean": "rm -rf node_modules && rm -rf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1"
+  }
+}
